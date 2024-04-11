@@ -10,7 +10,7 @@ interface DrawerProps {
   sidebarOpened: boolean;
   closeSidebar: () => void;
   onSubmit: () => void;
-  register: (name: string) => ({ required: boolean });
+  register: any;
   handleSubmit: ReturnType<typeof useForm>['handleSubmit'];
   errors: FieldErrors<Inputs>;
 }
