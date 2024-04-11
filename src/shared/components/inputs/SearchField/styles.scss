@@ -1,0 +1,33 @@
+.search-field__container {
+  width: 60%;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  input {
+    font-size: 1.5rem;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    height: 100%;
+  }
+  input:focus {
+    outline: none;
+  }
+  button {
+    width: 60px;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    img {
+      height: 24px;
+    }
+  }
+}
