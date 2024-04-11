@@ -1,0 +1,22 @@
+.card-container__container {
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.card-section__container {
+  padding: 60px 120px;
+}
+
+.card-section__header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  h2 {
+    color: var(---cor-primaria);
+    font-size: 32px;
+  }
+}
