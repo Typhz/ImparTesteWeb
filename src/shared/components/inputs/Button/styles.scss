@@ -1,0 +1,53 @@
+.button__container {
+  font-size: 18px;
+  box-shadow: 0 3px 6px #92207242;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 8px;
+  opacity: 1;
+  margin: 16px 0;
+  cursor: pointer;
+
+  &.contained {
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    opacity: 1;
+    cursor: pointer;
+
+    &.primary {
+      background: var(---cor-destaque);
+    }
+
+    .success {
+      background: var(---cor-sucesso);
+    }
+
+    .warning {
+      background: var(---cor-aviso);
+    }
+
+    &.error {
+      background: var(---cor-erro);
+    }
+
+    .contained:hover {
+      background: var(---cor-destaque);
+    }
+
+
+  }
+
+  &.outlined {
+    background: var(---cor-branco);
+    color: var(---cor-destaque);
+    border: 2px solid var(---cor-destaque);
+    padding: 12px 40px;
+    border-radius: 8px;
+    opacity: 1;
+    cursor: pointer;
+
+  }
+}
