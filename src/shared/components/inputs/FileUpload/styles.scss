@@ -1,0 +1,19 @@
+.file-upload__container {
+  flex-direction: column;
+  display: flex;
+  margin: 16px 0;
+
+  label {
+    color: var(---cor-texto);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  input {
+    font-size: 18px;
+    height: 60px;
+    padding: 0 16px;
+    border: 1px solid #B9B9B9;
+    border-radius: 8px;
+  }
+}
