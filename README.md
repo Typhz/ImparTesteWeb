@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Impar Teste
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+Projeto Frontend ReactJs desenvolvido para listar, adicionar, editar e deletar carros.
 
-Currently, two official plugins are available:
+# Tecnologias utilizadas
+- [ReactJs](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Axios](https://axios-http.com/)
+- [Scss](https://sass-lang.com/)
+- [React Query](https://tanstack.com/query/v3/)
+- [React Hook Form](https://react-hook-form.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- [x] Listar todos os carros
+- [x] Adicionar um novo carro
+- [x] Editar um carro
+- [x] Deletar um carro
+- [x] Filtrar carros por nome
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Estrutura de pastas
 ```
+.
+├── src
+│   ├── assets
+│   ├── core
+│   │   ├── services
+│   ├── pages
+│   │   ├── Home
+│   │   │   ├── components
+│   │   │   ├── hooks
+│   │   │   ├── interfaces
+│   ├── shared
+│   │   ├── components
+│   │   │   ├── feedback
+│   │   │   ├── inputs
+│   │   │   ├── layout
+│   │   │   ├── navigation
+│   │   │   └── surface
+│   ├── styles
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```
+* `src/assets`: Contém as imagens utilizadas no projeto.
+* `src/core/services`: Contém os serviços que fazem as requisições para a API.
+* `src/pages`: Contém as páginas do projeto.
+* `src/shared/components`: Contém os componentes compartilhados.
+* `src/styles`: Contém os estilos globais do projeto.
+
+## Como rodar o projeto
+* Primeiramente, clone o repositório.
+`git clone https://github.com/Typhz/ImparTesteWeb.git`
+
+* Em seguida, entre na pasta do projeto.
+`cd ImparTesteWeb`
+
+* Rode o comando
+`npm install` para instalar todas as dependências necessárias.
+
+* E rode o comando `vite` para rodar o projeto localmente.
+
