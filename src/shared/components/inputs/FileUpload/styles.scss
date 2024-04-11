@@ -1,9 +1,16 @@
 .file-upload__container {
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   margin: 16px 0;
+  font-size: 18px;
+  height: 60px;
+  padding: 0 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 8px;
 
-  label {
+  .file-upload__label {
     color: var(---cor-texto);
     font-size: 14px;
     font-weight: bold;
@@ -15,5 +22,16 @@
     padding: 0 16px;
     border: 1px solid #B9B9B9;
     border-radius: 8px;
+    display: none;
+  }
+
+  .file-upload__button {
+    background: var(---cor-branco);
+    color: var(---cor-destaque);
+    border: 2px solid var(---cor-destaque);
+    padding: 12px 40px;
+    border-radius: 8px;
+    opacity: 1;
+    cursor: pointer;
   }
 }
