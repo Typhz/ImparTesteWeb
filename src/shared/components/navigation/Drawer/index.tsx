@@ -28,7 +28,7 @@ const Drawer = ({sidebarOpened, closeSidebar, onSubmit, register, handleSubmit, 
           <TextField label="DIGITE UM NOME PARA O CARD" placeholder="Digite o título" id="name" register={register}
                      name="name"/>
           {errors.name && <span>Campo nome é obrigatorio</span>}
-          <FileUpload label="INCLUA UMA IMAGEM PARA APARECER NO CARD" id="image" register={register} name="imageFile"/>
+          <FileUpload label="Nenhum arquivo selecionado" id="image" register={register} name="imageFile"/>
           {errors.imageFile && <span>Campo imagem é obrigatorio</span>}
         </div>
         <hr/>
