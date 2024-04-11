@@ -1,0 +1,28 @@
+.paginator__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 16px;
+  gap: 16px;
+
+  span {
+    color: var(---cor-texto);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  button {
+    background: var(---cor-branco);
+    color: var(---cor-texto);
+    border: 1px solid #B9B9B9;
+    border-radius: 8px;
+    min-width: 40px;
+    padding: 0 8px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+}
