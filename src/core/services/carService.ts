@@ -1,10 +1,12 @@
 import axios from 'axios';
+import {ICarService} from './interfaces/ICarService.ts';
 
 class CarService {
-  private API_URL = 'https://app-patrickreis-api.azurewebsites.net/api/Car';
+  private API_URL = import.meta.env.VITE_API_URL;
 
   async getCars(page: number, limit: number, searchTerm: string) {
-    const response = await axios.get(`${this.API_URL}?pageNumber=${page}&pageSize=${limit}&searchTerm=${searchTerm}`);
+    console.log(import.meta.env.VITE_API_URL)
+    const response = await axios.get(`${this.API_URL}?pageNumber=${page}&pageSize=${limit}&searchName=${searchTerm}`);
     return response.data;
   }
 
@@ -13,7 +15,7 @@ class CarService {
     return response.data;
   }
 
-  async createCar(carData: any) {
+  async createCar(carData: ICarService) {
     const formData = new FormData();
     formData.append('name', carData.name);
     formData.append('imageFile', carData.imageFile[0]);
@@ -26,7 +28,7 @@ class CarService {
     return response.data;
   }
 
-  async updateCar(id: number, carData: any) {
+  async updateCar(id: number, carData: ICarService) {
     const formData = new FormData();
     formData.append('name', carData.name);
     formData.append('imageFile', carData.imageFile[0]);
